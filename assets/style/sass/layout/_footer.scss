@@ -1,0 +1,88 @@
+/*----------------------------------------------------------
+    File Name  : _footer.scss
+    Desc       : File ini merupakan styling untuk Footer
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Footer Landing Page
+ *
+ */
+
+
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+ 
+/*----------------------------------------------------------
+1. Footer Page Start
+------------------------------------------------------------*/ 
+.footer-wrap{
+    .footer-location {
+      ul {
+        li {
+          background: url('../../img/map-maker.png') no-repeat left 3px;
+          background-size: 25px !important;
+          padding: 0 0 0 2rem;
+          margin: 0;
+          margin-left: 30px;
+          margin-bottom: 1rem;
+          list-style: none;
+          color: #ffffff;
+          line-height: 30px;
+
+          a {
+            color: #ffffff !important;
+          }
+          @include mix.and-lg {
+            margin-left: 120px;
+          }
+  
+          @include mix.and-xl {
+            margin-left: 200px;
+          }
+  
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  
+    .footer-nav {
+      ul {
+        li {
+          margin-bottom: 1rem;
+          text-align: start;
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+.bg-footer {
+    a {
+        color: #ffffff;
+    }
+    ul {
+
+        li {
+            color: #ffffff;
+
+            a {
+                font-size: 14px;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+
+
+
+/*----------------------------------------------------------
+1. Footer Page End
+------------------------------------------------------------*/ 

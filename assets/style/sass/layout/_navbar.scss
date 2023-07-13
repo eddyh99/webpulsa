@@ -1,0 +1,32 @@
+/*----------------------------------------------------------
+    File Name  : _navbar.scss
+    Desc       : File ini merupakan styling untuk Navbar
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Navbar Landing Page
+ *
+ */
+
+
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+ 
+/*----------------------------------------------------------
+1. Navbar Landing Page Start
+------------------------------------------------------------*/ 
+ 
+.nav-link.text-white {
+    font-family: var.$f-poppins;
+}
+
+.navbar-toggler {
+    background-color: #ffffff;
+}
+
+/*----------------------------------------------------------
+1. Navbar Landing Page End
+------------------------------------------------------------*/ 
