@@ -88,4 +88,4 @@ defined('EXIT__AUTO_MAX')      or define('EXIT__AUTO_MAX', 125); // highest auto
 custom Constant
 */
 
-define('NAMETITLE', "Pulsa");
+define('NAMETITLE', "Pulsanesia");

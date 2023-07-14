@@ -1,0 +1,30 @@
+/*----------------------------------------------------------
+    File Name  : _member-pages.scss
+    Desc       : File ini merupakan styling untuk Member Pages
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Profile Member Page
+ *
+ */
+
+
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+ 
+/*----------------------------------------------------------
+1. Profile Member Page Start
+------------------------------------------------------------*/ 
+
+.content-member {
+    background-color: rgb(146, 146, 167);
+    width: 100%;
+    height: 600px;
+}
+
+/*----------------------------------------------------------
+1. Profile Member Page End
+------------------------------------------------------------*/ 

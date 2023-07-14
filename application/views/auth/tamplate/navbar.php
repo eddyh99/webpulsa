@@ -1,21 +1,3 @@
-<!-- <nav class="navbar navbar-light bg-dark">
-    <div class="container my-3">
-        <div>
-            <img clasS="d-block" src="<?= base_url()?>assets/img/logo.jpg" alt="">
-        </div>
-        <div>
-            <ul class="d-flex">
-                <li class="ps-5"><a href="" class="text-white">Harga</a></li>
-                <li class="ps-5"><a href="" class="text-white">Riwayat Transaksi</a></li>
-                <li class="ps-5"><a href="" class="text-white">Blog</a></li>
-                <li class="ps-5"><a href="" class="text-white">Testimoni</a></li>
-                <li class="ps-5"><a href="" class="text-white">Resseler</a></li>
-                <li class="ps-5"><a href="" class="text-white">Signup</a></li>
-            </ul>
-        </div>
-    </div>
-</nav> -->
-
 <!-- START NAVBAR -->
 <nav class="navbar navbar-expand-xl bg-dark shadow-lg  fixed-top">
     <div class="container d-flex justify-content-between my-3">

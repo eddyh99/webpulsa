@@ -4,6 +4,7 @@
     Desc        : Modul ini di gunakan untuk menampilkan landing page, Error 404
 				  User Signup, Login, Reset Pass,  
     Sub fungsi  : 
+		- index 		: berfungsi menampilkan landing page
         - page404    	: berfungsi Menampilkan Error 404
         
 ------------------------------------------------------------*/ 
@@ -23,6 +24,18 @@ class Auth extends CI_Controller
             'content'	 	=> 'auth/index',
 			'navbar'		=> 'auth/tamplate/navbar',
 			'extra'		    => 'auth/js/js_index',
+		);
+
+		$this->load->view('auth/tamplate/wrapper', $data);
+	}
+
+	public function login()
+	{	
+		$data	= array(
+            'title'		 	=> NAMETITLE . ' - Login',
+            'content'	 	=> 'auth/login',
+			// 'navbar'		=> 'auth/tamplate/navbar',
+			// 'extra'		    => 'auth/js/js_index',
 		);
 
 		$this->load->view('auth/tamplate/wrapper', $data);

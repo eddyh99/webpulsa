@@ -1,0 +1,71 @@
+/*----------------------------------------------------------
+    File Name  : _sidebar-member.scss
+    Desc       : File ini merupakan styling untuk Sidebar Member Pages
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Sidebar Member
+ *
+ */
+
+
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+ 
+/*----------------------------------------------------------
+1. Sidebar Member  Start
+------------------------------------------------------------*/ 
+.breadcrumb-wrapper {
+    background-color: #ffffff;
+    border: 1px solid rgb(193, 193, 193);
+    border-radius: 4px;
+}
+
+.sidebar-member {
+    width: 90%;
+    background-color: red;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+
+    .header {
+        height: 50px;
+        background-color: #ECECED;
+        padding-left: 10px;
+        padding-top: 10px;
+        border: 1px solid rgb(232, 232, 232);
+    }
+    
+    .main-sidebar {
+        background-color: #ffffff;
+        
+        
+        a {
+            display: block;
+            height: 40px;
+            width: 100%;
+            padding-left: 8px;
+            padding-top: 8px;
+            border: 1px solid rgb(232, 232, 232);
+            &:hover {
+                background-color: #eaeaea;
+            }
+
+            .text-sidebar-member, i {
+                font-size: 12px;
+            }
+        }
+
+        a.active {
+            background-color: orange;
+            color: #ffffff;
+        }
+    }
+
+
+}
+
+/*----------------------------------------------------------
+1. Sidebar Member  End
+------------------------------------------------------------*/ 

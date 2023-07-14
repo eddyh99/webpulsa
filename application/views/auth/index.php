@@ -1,7 +1,6 @@
 
 <!-- START MAIN CONTENT -->
 <main class="pt-5">
-
     <!-- Start Banner -->
     <section class="bg-banner">
         <div class="container pt-5">

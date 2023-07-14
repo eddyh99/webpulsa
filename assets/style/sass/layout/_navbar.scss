@@ -8,6 +8,7 @@
  * TABLE OF CONTENTS
  *
  * 1. Navbar Landing Page
+ * 2. Navbar Member Page
  *
  */
 
@@ -29,4 +30,39 @@
 
 /*----------------------------------------------------------
 1. Navbar Landing Page End
+------------------------------------------------------------*/ 
+
+
+/*----------------------------------------------------------
+2. Navbar Member Page Start
+------------------------------------------------------------*/ 
+.text-small-navbarmember {
+    font-size: 14px;
+    padding-left: 10px;
+    color: #2ECD70;
+}
+
+.bg-navbar-nofix {
+    background-image: linear-gradient(to bottom,#414141 0,#323232 100%);
+}
+
+.navbar-nofix a {
+    width: 120px;
+    height: 100px;
+    border-left: 1px solid #4A4A4A;
+    border-right: 1px solid #292929;
+    color: #b0b0b0;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.text-small-nofixnavmember {
+    font-size: 12px;
+    padding-top: 5px;
+} 
+
+/*----------------------------------------------------------
+2. Navbar Member Page End
 ------------------------------------------------------------*/ 
