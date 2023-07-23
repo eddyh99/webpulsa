@@ -52,3 +52,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['default_controller'] = 'auth';
 $route['404_override'] = 'auth/page404';
 $route['translate_uri_dashes'] = FALSE;
+$route['history']   = 'auth/history';
+$route['harga']     = 'auth/harga';
+$route['agen']      = 'auth/harga';

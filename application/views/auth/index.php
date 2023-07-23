@@ -50,88 +50,90 @@
                 </div>
                 <div class="col-12 col-lg-5">
                     <div class="bg-form-banner mb-5">
-                        <form action="">
-                            <div class="col-10 mx-auto pt-4">
-                                <div class="bg-success d-flex justify-content-center p-3">
-                                    <div class="bg-danger btn-form-banner-login rounded-1  d-flex justify-content-center align-items-center">
-                                        <i class="fa-solid fa-arrow-right-to-bracket me-2"></i>
-                                        Masuk
-                                    </div>
-                                    <div class="bg-warning btn-form-banner-login rounded-1 ms-2 d-flex justify-content-center align-items-center">
-                                        <i class="fa-solid fa-user-plus me-2"></i>
-                                        Daftar
-                                    </div>
+                        <div class="col-10 mx-auto pt-4">
+                            <div class="bg-success d-flex justify-content-center p-3">
+                                <div class="bg-danger btn-form-banner-login rounded-1  d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-arrow-right-to-bracket me-2"></i>
+                                    Masuk
+                                </div>
+                                <div class="bg-warning btn-form-banner-login rounded-1 ms-2 d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-user-plus me-2"></i>
+                                    Daftar
                                 </div>
                             </div>
-                            <div class="col-10 mx-auto bg-info mt-3">
-                                <marquee behavior="scroll" direction="left">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, animi!
-                                </marquee>
-                            </div>
-                            <div class="col-10 mx-auto mt-3 text-secondary">
-                                <span>Pastikan Input Nomer Dengan Benar Dan Dalam Masa Aktif S&K</span>
-                                <h4 class="text-center mt-1">Form Order</h4>
-                            </div>
+                        </div>
+                        <div class="col-10 mx-auto bg-info mt-3">
+                            <marquee behavior="scroll" direction="left">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, animi!
+                            </marquee>
+                        </div>
+                        <div class="col-10 mx-auto mt-3 text-secondary">
+                            <span>Pastikan Input Nomer Dengan Benar Dan Dalam Masa Aktif S&K</span>
+                            <h4 class="text-center mt-1">Form Order</h4>
+                        </div>
+                        <form action="<?=base_url()?>transaksi/order" method="post">
                             <div class="col-10 mx-auto mt-2">
-                                <select class="form-select pulsa-menu-select bg-dark text-white">
-                                    <option selected value="1">Pulsa</option>
-                                    <option value="2">Kuota XL</option>
-                                    <option value="3">Kuota Telkomsel</option>
-                                    <option value="4">Kuota Axis</option>
+                                <select id="tipeproduk" name="tipeproduk" class="form-select pulsa-menu-select bg-dark text-white" required>
+                                    <option selected value="pulsa">Pulsa</option>
+                                    <option value="data">Paket Data</option>
+                                    <option value="token">Token Listrik</option>
+                                    <option value="games">Games</option>
+                                    <option value="emoney">e-Money</option>
+                                    <option value="tagihan">Tagihan</option>
+                                    <option value="voucher">Voucher</option>
                                 </select>
                             </div>
                             <div class="col-10 mx-auto mt-2">
-                                <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="form-control bg-dark text-white" placeholder="No HP" maxlength="12">
+                                <input type="number" name="nope" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" class="form-control bg-dark text-white" placeholder="No HP" maxlength="30" required>
                             </div>
                             <div class="col-10 mx-auto mt-2">
-                                <select class="form-select provider-menu-select bg-dark text-white">
+                                <select id="provider" name="provider" class="form-select provider-menu-select bg-dark text-white" required>
                                     <option selected disabled>-- Provider --</option>
-                                    <option value="xl">XL</option>
-                                    <option value="telkomsel">Telkomsel</option>
-                                    <option value="axis">Axis</option>
                                 </select>
                             </div>
                             <div class="col-10 mx-auto mt-2">
-                                <select class="form-select voucher-menu-select bg-dark text-white">
-                                    <option selected disabled>-- Voucher --</option>
-                                    <option value="xl">XL</option>
-                                    <option value="telkomsel">Telkomsel</option>
-                                    <option value="axis">Axis</option>
+                                <select id="voucher" name="voucher" class="form-select voucher-menu-select bg-dark text-white" required>
+                                    <option selected disabled>-- Produk --</option>
                                 </select>
                             </div>
                             <div class="col-10 mx-auto mt-2">
-                                <select class="form-select creditcard-menu-select bg-dark text-white">
+                                <select name="carabayar" id="carabayar" class="form-select creditcard-menu-select bg-dark text-white" required>
                                     <option selected disabled>-- Pilih Pembayaran --</option>
-                                    <option value="bca">BCA</option>
-                                    <option value="bankjago">Bank Jago</option>
-                                    <option value="bni">BNI</option>
+                                    <option value="bni">Virtual BNI</option>
+                                    <option value="mandiri">Virtual Mandiri</option>
+                                    <option value="permata">Virtual Permata</option>
+                                    <option value="bri">Briva</option>
+                                    <option value="qris">QRIS</option>
                                 </select>
                             </div>
+                            <div class="col-10 mx-auto mt-2 text-success alert-warning">
+                                <span id="deskripsi"></span>
+                            </div>
+                            
                             <div class="col-10 mx-auto mt-2 text-success">
                                 <h5 class="fw-bold text-center">
-                                    RP - 10.000
+                                    <span id="price"></span>
                                 </h5>
                             </div>
 
                             <div class="col-10 mx-auto mt-4">
-                                <button class="btn btn-primary d-flex w-100 justify-content-center">
+                                <button type="submit" class="btn btn-primary d-flex w-100 justify-content-center">
                                     Order Sekarang
                                 </button>
                             </div>
-
-                            <div class="col-10 mx-auto mt-4">
-                                <p class="text-sdank text-center text-white">Dengan klik Order Sekarang, Anda telah mengisi data dengan benar dan setuju dengan <span class="text-info">syarat dan ketentuan</span> yang berlaku di Polaris Pulsa</p>
-                            </div>
-                            
-                            <div class="col-10 mx-auto mt-4 benefit-banner-form">
-                                <ul>
-                                    <li>Jam 23:40-00:20 Jadwal Maintenance Server</li>
-                                    <li> Pembayaran via transfer perhatikan nominalnya dan jadwal offline Bank.</li>
-                                    <li>Download aplikasinya, makin mudah pesannya! Download.</li>
-                                    <li>Komplain maksimal 5x24 Jam.</li>
-                                </ul>
-                            </div>
                         </form>
+
+                        <div class="col-10 mx-auto mt-4">
+                            <p class="text-sdank text-center text-white">Dengan klik Order Sekarang, Anda telah mengisi data dengan benar dan setuju dengan <span class="text-info">syarat dan ketentuan</span> yang berlaku di Polaris Pulsa</p>
+                        </div>
+                        
+                        <div class="col-10 mx-auto mt-4 benefit-banner-form">
+                            <ul>
+                                <li>Jam 23:40-00:20 Jadwal Maintenance Server</li>
+                                <li>Virtual account dapat di transfer menggunakan Bank/e-Wallet apapun</li>
+                                <li>Komplain maksimal 5x24 Jam.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -373,27 +375,6 @@
 </footer>
 
 <a href="#top" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-circle-up"></i></a>
-
-<script>
-    // For Carausel Use owl-carausel
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:2
-            },
-            1000:{
-                items:3
-            }
-        }
-    })
-</script>
 
 
 <?php if (@isset($_SESSION["success"])) { ?>
