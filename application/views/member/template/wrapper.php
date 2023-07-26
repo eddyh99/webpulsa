@@ -6,7 +6,11 @@ $this->load->view('member/template/header');
 
 // For Navbar Landing Page
 if(isset($navbar)){
-	$this->load->view($navbar);
+	$this->load->view(@$navbar);
+}
+
+if(isset($mainnavbar)){
+	$this->load->view(@$mainnavbar);
 }
 
 $this->load->view($content);

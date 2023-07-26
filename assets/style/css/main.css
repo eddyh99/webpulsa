@@ -12887,19 +12887,31 @@ p {
  * TABLE OF CONTENTS
  *
  * 1. Profile Member Page
+ * 2. Pemberitahuan Member Page
  *
  */
 /*----------------------------------------------------------
 1. Profile Member Page Start
 ------------------------------------------------------------*/
 .content-member {
-  background-color: rgb(146, 146, 167);
+  background-color: #ffffff;
   width: 100%;
-  height: 600px;
+  height: 2000px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 /*----------------------------------------------------------
 1. Profile Member Page End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
+2. Pemberitahuan Member Page Start
+------------------------------------------------------------*/
+.pemberitahuan-wrapping {
+  border-bottom: 1px solid rgb(154, 154, 154);
+}
+
+/*----------------------------------------------------------
+2. Pemberitahuan Member Page End
 ------------------------------------------------------------*/
 /*----------------------------------------------------------
     File Name  : _sidebar-member.scss
@@ -13006,6 +13018,10 @@ p {
 }
 .navbar-nofix a:hover {
   color: #ffffff;
+}
+
+.navbar-nofix a.active {
+  color: #FE9800;
 }
 
 .text-small-nofixnavmember {

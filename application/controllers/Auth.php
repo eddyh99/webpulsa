@@ -19,14 +19,45 @@ class Auth extends CI_Controller
 
 	public function index()
 	{	
+	    $_SESSION["identify"]=rand(1000,9999);
 		$data	= array(
             'title'		 	=> NAMETITLE . ' - Homepage',
             'content'	 	=> 'auth/index',
-			'navbar'		=> 'auth/tamplate/navbar',
+			'navbar'		=> 'template/navbar',
 			'extra'		    => 'auth/js/js_index',
 		);
 
-		$this->load->view('auth/tamplate/wrapper', $data);
+		$this->load->view('template/wrapper', $data);
+	}
+	
+	public function history(){
+		$data	= array(
+            'title'		 	=> NAMETITLE . ' - Riwayat Transaksi',
+            'content'	 	=> 'auth/history',
+			'navbar'		=> 'template/navbar',
+		);
+
+		$this->load->view('template/wrapper', $data);
+	}
+
+	public function harga(){
+		$data	= array(
+            'title'		 	=> NAMETITLE . ' - Harga',
+            'content'	 	=> 'auth/harga',
+			// 'navbar'		=> 'template/navbar',
+		);
+
+		$this->load->view('template/wrapper', $data);
+	}
+
+	public function agen(){
+		$data	= array(
+            'title'		 	=> NAMETITLE . ' - Agen',
+            'content'	 	=> 'auth/agen',
+			'navbar'		=> 'template/navbar',
+		);
+
+		$this->load->view('template/wrapper', $data);
 	}
 
 	public function login()

@@ -88,4 +88,6 @@ defined('EXIT__AUTO_MAX')      or define('EXIT__AUTO_MAX', 125); // highest auto
 custom Constant
 */
 
-define('NAMETITLE', "Pulsanesia");
+
+define('NAMETITLE', "Pasar Pulsa");
+define('URLAPI',"https://api.pasarpulsa.online");

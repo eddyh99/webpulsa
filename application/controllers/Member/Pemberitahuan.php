@@ -1,14 +1,14 @@
 <?php
 /*----------------------------------------------------------
-    Modul Name  : Modul Profile
-    Desc        : Modul ini di gunakan untuk memanajemen akun dari member area  
+    Modul Name  : Modul Pemberitahuan
+    Desc        : Modul ini di gunakan untuk menerima pemberitahuan yang masuk
     Sub fungsi  : 
-        - index    	: Menampilkan isi dari profile member
+        - index    	: Menampilkan isi dari Pemberitahuan
         
 ------------------------------------------------------------*/ 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Profile extends CI_Controller
+class Pemberitahuan extends CI_Controller
 {
 	public function __construct()
 	{
@@ -18,12 +18,12 @@ class Profile extends CI_Controller
 	public function index()
 	{	
 		$data	= array(
-            'title'		 	=> NAMETITLE . ' - Member Profile',
-            'content'	 	=> 'member/profile/index',
+            'title'		 	=> NAMETITLE . ' - Pemberitahuan',
+            'content'	 	=> 'member/pemberitahuan/index',
 			'navbar'		=> 'member/template/navbar',
-			'extra'		    => 'member/profile/js/_js_index',
-			'side1'			=> 'active',
-			'breadcrumb'	=> 'Profile',
+			'extra'		    => 'member/pemberitahuan/js/_js_index',
+			'side5'			=> 'active',
+			'breadcrumb'	=> 'Pemberitahuan'
 		);
 
 
