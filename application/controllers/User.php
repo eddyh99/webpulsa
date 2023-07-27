@@ -22,8 +22,9 @@ class User extends CI_Controller
 	{	
 		$data	= array(
             'title'		 	=> 'Mendaftar - '.NAMETITLE,
-            'content'	 	=> 'user/index',
-			'navbar'		=> 'template/navbar',
+            'content'	 	=> 'auth/register',
+			'extra'			=> 'auth/js/js_login'
+			// 'navbar'		=> 'template/navbar',
 		);
 
 		$this->load->view('template/wrapper', $data);
@@ -66,7 +67,7 @@ class User extends CI_Controller
         $data	= array(
             'title'		 	=> 'Sukses Register - '.NAMETITLE,
             'content'	 	=> 'user/success',
-			'navbar'		=> 'template/navbar',
+			// 'navbar'		=> 'template/navbar',
 		);
 
 		$this->load->view('template/wrapper', $data);
@@ -92,8 +93,9 @@ class User extends CI_Controller
     public function login(){
         $data	= array(
             'title'		 	=> 'Masuk - '.NAMETITLE,
-            'content'	 	=> 'user/login',
-			'navbar'		=> 'template/navbar',
+            'content'	 	=> 'auth/login',
+			'extra'			=> 'auth/js/js_login',
+			// 'navbar'		=> 'template/navbar',
 		);
 
 		$this->load->view('template/wrapper', $data);
@@ -128,6 +130,6 @@ class User extends CI_Controller
 	            "email"     => $result->message->user_email
 	        );
 	    $_SESSION["logged_in"]=$ses_user;
-        redirect ("akun/profile");
+        redirect ("member/profile");
     }
 }

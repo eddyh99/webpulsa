@@ -27,4 +27,4 @@
     <link rel="stylesheet" href="<?= base_url()?>assets/style/css/main.css">
     
 </head>
-<body style="height: 5000px; background-color: #f3f3f3;">
+<body style="background-color: #f3f3f3;">

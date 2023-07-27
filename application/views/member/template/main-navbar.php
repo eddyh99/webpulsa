@@ -159,19 +159,19 @@
                     Beranda
                 </span>
             </a>
-            <a href="" class=" p-4 d-flex flex-column align-items-center justify-content-center <?= @$side12?>">
+            <a href="<?= base_url()?>" class=" p-4 d-flex flex-column align-items-center justify-content-center <?= @$side12?>">
                 <i class="fa-solid fa-cart-shopping fs-3"></i>
                 <span class="text-small-nofixnavmember">
                     Order
                 </span>
             </a>
-            <a href="" class=" p-4 d-flex flex-column align-items-center justify-content-center <?= @$side13?>">
+            <a href="<?= base_url()?>status_order" class=" p-4 d-flex flex-column align-items-center justify-content-center <?= @$side13?>">
                 <i class="fa-solid fa-clock-rotate-left fs-3"></i>
                 <span class="text-small-nofixnavmember">
                     Status Order
                 </span>
             </a>
-            <a href="" class=" p-4 d-flex flex-column align-items-center justify-content-center <?= @$side14?>">
+            <a href="<?= base_url()?>member/harga" class=" p-4 d-flex flex-column align-items-center justify-content-center <?= @$side14?>">
                 <i class="fa-solid fa-money-bill-wave fs-3"></i>
                 <span class="text-small-nofixnavmember">
                     Harga
@@ -189,7 +189,7 @@
                     Blog
                 </span>
             </a> -->
-            <a href="<?= base_url()?>reseller" class=" p-4 d-flex flex-column align-items-center justify-content-center <?= @$side15?>">
+            <a href="<?= base_url()?>" class=" p-4 d-flex flex-column align-items-center justify-content-center <?= @$side15?>">
                 <i class="fa-solid fa-users fs-3"></i>
                 <span class="text-small-nofixnavmember">
                     Reseller

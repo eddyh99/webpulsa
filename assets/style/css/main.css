@@ -5124,7 +5124,7 @@ textarea.form-control-lg {
   font-size: 0.75em;
   font-weight: 700;
   line-height: 1;
-  color: #fff;
+  color: #000000;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -12888,6 +12888,8 @@ p {
  *
  * 1. Profile Member Page
  * 2. Pemberitahuan Member Page
+ * 3. Riwayat Transaksi Member Page
+ * 4. Status Order Member Page
  *
  */
 /*----------------------------------------------------------
@@ -12896,7 +12898,7 @@ p {
 .content-member {
   background-color: #ffffff;
   width: 100%;
-  height: 2000px;
+  height: auto;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
@@ -12912,6 +12914,35 @@ p {
 
 /*----------------------------------------------------------
 2. Pemberitahuan Member Page End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
+3. Riwayat Member Page Start
+------------------------------------------------------------*/
+.content-member .panel .table-responsive .table-riwayat tbody tr td .badge-inverse {
+  color: red;
+}
+
+.content-member .panel .table-responsive .table-riwayat tbody tr td .badge-success {
+  color: green;
+}
+
+/*----------------------------------------------------------
+3. Riwayat Member Page End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
+4. Status Riwayat Member Page Start
+------------------------------------------------------------*/
+.status-order-wrapping {
+  background-color: #ffffff;
+  height: auto;
+}
+
+.status-order-wrapping .status-order-header {
+  background-color: #EBEAEA;
+}
+
+/*----------------------------------------------------------
+4. Status Riwayat Member Page End
 ------------------------------------------------------------*/
 /*----------------------------------------------------------
     File Name  : _sidebar-member.scss
@@ -13094,6 +13125,43 @@ p {
 
 /*----------------------------------------------------------
 1. Footer Page End
+------------------------------------------------------------*/
+/*----------------------------------------------------------
+    File Name  : _login.scss
+    Desc       : File ini merupakan styling untuk Login dan Registrasi
+
+------------------------------------------------------------*/
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Login Page
+ * 2. Registrasi
+ *
+ */
+/*----------------------------------------------------------
+1. Login Page Start
+------------------------------------------------------------*/
+.login-wrapper {
+  background-color: #f9f9f9;
+  border: 1px solid #d5d5d5;
+  margin: 100px 0px 40px 0px;
+  border-radius: 10px;
+}
+
+.login-wrapper form .title-login {
+  color: #f90;
+}
+
+.login-wrapper form .input-login-wrapper p {
+  font-size: 14px;
+}
+
+.login-wrapper form .login-actions button {
+  width: 100%;
+}
+
+/*----------------------------------------------------------
+1. Login Page End
 ------------------------------------------------------------*/
 /*----------------------------------------------------------
     File Name  : _navbar.scss

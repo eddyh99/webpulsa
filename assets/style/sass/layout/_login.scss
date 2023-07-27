@@ -1,0 +1,44 @@
+/*----------------------------------------------------------
+    File Name  : _login.scss
+    Desc       : File ini merupakan styling untuk Login dan Registrasi
+
+------------------------------------------------------------*/ 
+
+/**
+ * TABLE OF CONTENTS
+ *
+ * 1. Login Page
+ * 2. Registrasi
+ *
+ */
+
+
+ @use '../abstracts/variables' as var;
+ @use '../abstracts/mixins' as mix;
+ 
+/*----------------------------------------------------------
+1. Login Page Start
+------------------------------------------------------------*/ 
+
+.login-wrapper {
+    background-color: #f9f9f9;
+    border: 1px solid #d5d5d5;
+    margin: 100px 0px 40px 0px;
+    border-radius: 10px;
+}
+
+.login-wrapper form .title-login {
+    color: #f90;
+}
+
+.login-wrapper form .input-login-wrapper p {
+    font-size: 14px;
+}
+
+.login-wrapper form .login-actions button {
+    width: 100%;
+}
+
+/*----------------------------------------------------------
+1. Login Page End
+------------------------------------------------------------*/ 

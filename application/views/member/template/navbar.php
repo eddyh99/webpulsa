@@ -159,13 +159,13 @@
                     Beranda
                 </span>
             </a>
-            <a href="" class=" p-4 d-flex flex-column align-items-center justify-content-center">
+            <a href="<?= base_url()?>" class=" p-4 d-flex flex-column align-items-center justify-content-center">
                 <i class="fa-solid fa-cart-shopping fs-3"></i>
                 <span class="text-small-nofixnavmember">
                     Order
                 </span>
             </a>
-            <a href="" class=" p-4 d-flex flex-column align-items-center justify-content-center">
+            <a href="<?= base_url()?>status_order" class=" p-4 d-flex flex-column align-items-center justify-content-center">
                 <i class="fa-solid fa-clock-rotate-left fs-3"></i>
                 <span class="text-small-nofixnavmember">
                     Status Order
@@ -189,7 +189,7 @@
                     Blog
                 </span>
             </a> -->
-            <a href="" class=" p-4 d-flex flex-column align-items-center justify-content-center">
+            <a href="<?= base_url()?>" class=" p-4 d-flex flex-column align-items-center justify-content-center">
                 <i class="fa-solid fa-users fs-3"></i>
                 <span class="text-small-nofixnavmember">
                     Reseller

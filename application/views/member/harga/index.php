@@ -3,14 +3,14 @@
         <div class="row">
             <div class="col-12">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3>
-                            <i class="fa-solid fa-money-bill-wave fs-3"></i>
+                    <div class="panel-heading my-3">
+                        <h5>
+                            <i class="fa-solid fa-money-bill-wave fs-4"></i>
                                 DAFTAR  HARGA
-                            <a id="dl-link" class="pull-right" href="#" title="Download 13 transaksi">
+                            <a id="dl-link" class="pull-right text-primary" href="#" title="Download 13 transaksi">
                                 Tampilan klik 2 disini
                             </a>
-                        </h3>
+                        </h5>
                     </div>
                     <div class="table-responsive">
                             <!--pakai datatable aja-->
